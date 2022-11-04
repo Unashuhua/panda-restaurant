@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spicypanda</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="contact" href="./Contact.html">
+    <link rel="booking" href="booking.php">
+    <style>
+        input{
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type=submit] {
+            width: 100%;
+            margin-top: 20px;
+        }
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="onpicture">
+            <ul>
+                <li><a href="index.html" class="tm-nav-link active">Home</a></li>
+                <li><a href="booking.php">Booking</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <img id="background" src="./image/food.jpg" alt="background">
+    </header>
+    <main>
+        <article>
+            <h2>We Provide</h2>
+            <p><b>SpicyPanda</b> is a Chinese restaurant where you can eat, chat, and make friends. Although you are unlikely to get it,
+            because its owner is a programmer. We are located in the 20th district of Dublin. We provide staple food, hot dishes,
+            cold dishes and beverages. It's not expensive, it's suitable for all ages, come and taste it!
+            </p>
+            <form method="POST" action="./search.php">
+                <input type="text" name="search" placeholder="The culinary journey starts here...">
+                <input type="submit" name="submit-search" />
+            </form>
+            <div class="polaroid">
+                <img src="./image/dish/Cucumber.jpeg" alt="Cold Dish" style="width:100%">
+                <div class="container">
+                    <p>Cold Dish</p>
+            </div>
+            </div>
+            <div class="polaroid">
+                <img src="./image/dish/luyu.jpeg" alt="Hot Dish" style="width:100%">
+                <div class="container">
+                    <p>Hot Dish</p>
+                </div>
+            </div>
+            <div class="polaroid">
+                <img src="./image/dish/guotie.jpeg" alt="Main Food" style="width:100%">
+                <div class="container">
+                    <p>Main Food</p>
+                </div>
+            </div>
+            <div class="polaroid">
+                <img src="./image/dish/toufu.jpeg" alt="Soup" style="width:100%">
+                <div class="container">
+                    <p>Soup</p>
+                </div>
+            </div>
+            <div class="polaroid">
+                <img src="./image/dish/milktea.jpeg" alt="Drink" style="width:100%">
+                <div class="container">
+                    <p>Drink</p>
+                </div>
+            </div>
+        </article>
+    </main>
+    <footer class="tm-footer text-center">
+        <p>Copyright &copy; 2021 SpicyPanda
+            | Design: Shuhua Lin</p>
+    </footer>
+</body>
+</html>
+
